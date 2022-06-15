@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 section{
-    height: 500px;
+    height: 800px;
     background-color: yellow;
     border: 1px solid black;
     font-family:'Kdam Thmor Pro', sans-serif;
@@ -30,8 +30,11 @@ section{
 
 }
 footer{
-    height: 500px;
     background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px;
+
 }
 
 ul{
@@ -77,5 +80,101 @@ p{
 .photo-profile{
     height: 150px;
     margin: 30px;
-    
+}
+.social{
+    margin: 30px;
+}
+.sub-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+h2{
+    font-size: 30px;
+}
+.headshot{
+    width: 200px;
+
+}
+.headshot-container{
+    display:flex;
+    align-items: center;
+}
+.project-card{
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px grey;
+    margin: 10px;
+}
+.project-container{
+    display: flex;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 1000px){
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.sub-section-alternative{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+   
+}
+.subtext{
+    font-size: 15px;
+    font-weight: 300;
+}
+.project-image{
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.project-link{
+    text-decoration: none;
+    color: #ef744b;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.hamburger{
+    display: none;
+}
+@media only screen and (max-width: 1000px){
+    .hamburger{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        font-size: 30px;
+        color:white;
+        margin: 20px;
+        align-self: flex-end;
+    }
+    ul{
+        display:none;
+        background-color: #2b2c38; 
+        margin:0px
+    }
+    nav{
+        display:flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38
+    }
+    .photo-profile{
+        display:none;
+    }
+}
+ul.show{
+    display: block;
+}
+.hamburger:focus{
+    outline: 0;
+
 }
