@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
-section{
-    height: 800px;
-    background-color: yellow;
-    border: 1px solid black;
+*{
+    --black-color: #24242e;
+    --blue-color: #3a8eeef2;
+    --gray-color: #5c4f4f;
+    --red-color: #900;
     font-family:'Kdam Thmor Pro', sans-serif;
 }
-.section1{
-    background-color: #1c1c25;
+
+section{
     height: 100vh;
-    color: white;
+    background-color:  var(--blue-color);
+    border: 1px solid var(--gray-color);
+      
+}
+.section1{
+    background-color: var(--black-color);
+    background-image: none;
+    color: var(--blue-color);
     font-size: 40px;
 }
 .section1-nav{
@@ -21,20 +29,42 @@ section{
     height: 100%;
     justify-content: space-between;
     align-items: center;
-    
-
 }
 .section1-text{
     margin-left: 90px;
     margin-bottom: 200px ;
-
 }
-footer{
-    background-color: black;
-    color: white;
+.sub-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+.sub-section1{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.sub-section-skills{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+.skills{
+    display:flex;
+    justify-content: space-around;
+}
+.sub-section-alternative{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 80px;
-
+   
+}
+footer{
+    background-color: var(--black-color);
+    color: var(--blue-color);
+    text-align: center;
+    padding: 80px;
 }
 
 ul{
@@ -51,109 +81,171 @@ h1{
     font-size: 90px;
     margin: 0;
 }
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 30px;
+    font-weight: 100;
+}
+.h3-projects{
+    color: var(--black-color)
+}
+a{
+    text-decoration: none;
+    color: var(--blue-color);
+}
 p{
     margin: 0;
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 100;
+}
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.logo{
+    height: 200px;
+    margin: 30px;
+    border-radius: 75px;
 }
 .btn{
     width: 200px;
     height: 50px;
     border-radius: 25px;
-    background-color: blue;
+    background-color: var(--blue-color);
     text-align: center;
     font-size: 30px;
     font-weight: 300;
     padding-top: 5px;
     margin-top: 20px;
 }
+.a-btn{
+    color: var(--black-color);
+}
 .btn:hover{
-    background-color: #990000;
+    background-color: var(--red-color);
 }
 .btn:active{
-    background-color: #a9a9a9;
-    color: #1c1c25;
+    background-color: var(--gray-color);
+    color: var(--black-color);
 }
 .socials{
-    padding-bottom: 200px;
-}
-.photo-profile{
-    height: 150px;
-    margin: 30px;
+    padding-bottom: 300px;
 }
 .social{
     margin: 30px;
 }
-.sub-section{
-    display: flex;
-    justify-content: space-around;
-    padding: 80px;
-}
-h2{
-    font-size: 30px;
-}
 .headshot{
     width: 200px;
-
+    border-radius: 100px;
+    
 }
 .headshot-container{
     display:flex;
     align-items: center;
 }
-.project-card{
+.about-me-info{
+    margin-left: 50px;
+}
+.hobbies-container{
+    text-align: center;
+    box-shadow: 5px 5px 20px --black-color;
+   
+}
+.hobbies{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+    margin-top: 50px;
+}
+.brew{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    box-shadow: 5px 5px 20px --black-color;
+    
+}
+.brew-image{
+    width: 200px;
+    height: 100px;
+}
+.workout{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+ 
+}
+.workout-image{
+    width: 200px;
+    height: 100px;
+}
+.html-css-js-skill-image{
+    width: 150px;
+    height: 150px;
+}
+.typescript-skill-image{
+    width: 80px;
+    height: 80px;
+} 
+
+.react-skill-image{
+    width: 150px;
+    height: 100px;
+}
+.react-skill{
+    width:200px;
+    height:200px;
+}
+.nodejs-skill-image{
     width: 300px;
-    height: 500px;
-    box-shadow: 5px 5px 20px grey;
-    margin: 10px;
+    height: 150px;
+}
+.docker-skill-image{
+    width: 200px;
+    height: 100px;
+}
+.aws-skill-image{
+    width: 100px;
+    height: 100px;
 }
 .project-container{
+    margin-top: 100px;
     display: flex;
-    justify-content: space-around;
-}
-@media only screen and (max-width: 1000px){
-    .project-container{
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-.sub-section-alternative{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 80px;
-   
+    justify-content: center;
+    
 }
 .subtext{
     font-size: 15px;
     font-weight: 300;
 }
-.project-image{
-    margin-top: 25px;
-    width: 250px;
-    border-radius: 125px;
-}
-hr{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.project-link{
-    text-decoration: none;
-    color: #ef744b;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
+
 .hamburger{
     display: none;
 }
+ul.show{
+    display: block;
+}
+.hamburger:focus{
+    outline: 0;
+
+}
 @media only screen and (max-width: 1000px){
+    nav{
+        display:flex;
+        flex-direction: column-reverse;
+        background-color: var(--black-color);
+    }
+    .logo{
+        display:none;
+    }
     .hamburger{
         display: block;
         border: 0;
         background-color: transparent;
         font-size: 30px;
-        color:white;
+        color: var(--blue-color);
         margin: 20px;
         align-self: flex-end;
     }
@@ -162,19 +254,32 @@ a{
         background-color: #2b2c38; 
         margin:0px
     }
-    nav{
-        display:flex;
-        flex-direction: column-reverse;
-        background-color: #2b2c38
+    .sub-section{
+        padding-top: 20px;
+        flex-wrap: wrap;
     }
-    .photo-profile{
-        display:none;
+    .sub-section{
+        flex-wrap: wrap;
     }
-}
-ul.show{
-    display: block;
-}
-.hamburger:focus{
-    outline: 0;
-
+    .hobbies{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .about-me-info-resp{
+        margin: auto;
+        padding: auto;
+        margin-top: 20px;
+      
+    }
+    .sub-section-skills, .sub-section{
+        height: 220vh;
+        align-items: center;
+    }
+    .skills{
+        flex-wrap: wrap;
+    }
+    .text-direction{
+       writing-mode: vertical-rl;
+    }
 }

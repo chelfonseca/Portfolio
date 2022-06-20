@@ -13,11 +13,10 @@
 <body>
     <section class="section1">
         <nav class="section1-nav">
-            <img class="photo-profile" src="./src/images/MBF4.png" alt="Michel Fonseca's photo">
-            <!-- gravatar -->
+            <img class="logo" src="./src/images/mbf-logo.png" alt="MBF logo">
             <ul id="nav-list">
                 <li><a href="#about-me">About</a></li>
-                <li><a href="#projects">Project</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact-me">Contact</a></li>
             </ul>
             <button class="hamburger" id="hamburger">
@@ -28,26 +27,21 @@
             <div class="section1-text">
                 <h1>Michel Fonseca</h1>
                 <p>Full Stack Developer</p>
-                <div class="btn"><a href="#about-me">About me</a></div>
+                <div class="btn"><a class="a-btn" href="#about-me">About me</a></div>
             </div>
             <div class="socials">
                 <div>
-                    <a href="www.twitter.com" target="_blank" class="social"><svg xmlns="http://www.w3.org/2000/svg"
-                            fill="white" width="50" height="50" viewBox="0 0 24 24">
-                            <path
-                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-                        </svg></a>
-                </div>
-                <div>
                     <a href="https://www.linkedin.com/in/michel-fonseca/" target="_blank" class="social"><svg
-                            xmlns="http://www.w3.org/2000/svg" fill="white" width="50" height="50" viewBox="0 0 24 24">
+                            xmlns="http://www.w3.org/2000/svg" fill="#3a8eeef2" width="50" height="50"
+                            viewBox="0 0 24 24">
                             <path
                                 d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                         </svg></a>
                 </div>
                 <div>
                     <a href="https://github.com/chelfonseca" target="_blank" class="social"><svg
-                            xmlns="http://www.w3.org/2000/svg" fill="white" width="50" height="50" viewBox="0 0 24 24">
+                            xmlns="http://www.w3.org/2000/svg" fill="#3a8eeef2" width="50" height="50"
+                            viewBox="0 0 24 24">
                             <path
                                 d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                         </svg></a>
@@ -59,49 +53,112 @@
     </section>
 
     <section class="sub-section" id="about-me">
-        <div class="information">
-            <h2>About me</h2>
-            <p>Hi! My name is Michel. I am a software Developer</p>
-        </div>
         <div class="headshot-container">
             <img class="headshot" src="./src/images/MBF4.png" alt="Michel Fonseca headshot">
         </div>
+        <div class="sub-section1">
+            <div class="about-me-info about-me-info-resp text-direction" >
+                <h2 class="about-me-info">About me</h2>
+                <p class="about-me-info">Hi! My name is Michel.
+                    <br>
+                    <br>
+                    Full Stack Web Developer in development mode :).
+                </p>
+            </div>
+            <div class="hobbies-container">
+                <h2 class="about-me-info">Hobbies</h2>
+                <div class="hobbies">
+                    <div class="brew">
+                        <svg class="brew-image" xmlns="http://www.w3.org/2000/svg" version="1.0" width="100"
+                            height="100" viewBox="0 0 350.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+
+                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#24242e"
+                                stroke="none">
+                                <path
+                                    d="M2347 5105 c-128 -27 -255 -84 -352 -159 l-59 -47 -61 8 c-139 18 -267 1 -380 -52 -134 -62 -235 -154 -306 -281 l-29 -51 -88 -6 c-314 -20 -576 -245 -648 -554 -20 -86 -20 -230 0 -317 29 -122 115 -276 200 -355 l26 -24 0 -1466 c0 -961 4 -1488 10 -1530 19 -113 78 -192 179 -240 l56 -26 1225 0 c1181 0 1227 1 1274 19 68 26 133 89 167 161 l29 60 0 262 0 262 328 3 c306 4 331 5 394 26 139 46 272 162 338 292 67 133 65 104 65 860 0 753 1 735 -63 870 -39 84 -143 197 -224 244 -118 69 -131 70 -498 76 l-335 5 -3 39 c-3 36 1 43 52 93 82 80 120 130 159 208 60 120 72 174 72 325 -1 119 -4 144 -28 215 -38 114 -91 198 -177 285 -88 88 -169 137 -284 175 l-83 27 -31 82 c-92 239 -297 424 -552 496 -98 28 -278 35 -373 15z m274 -399 c75 -23 125 -53 182 -108 69 -68 112 -156 131 -272 24 -146 75 -190 239 -205 75 -7 108 -16 147 -37 182 -99 220 -350 75 -498 -21 -21 -64 -51 -94 -65 l-56 -26 -952 -3 -953 -2 0 -338 c0 -372 -2 -384 -66 -444 -91 -85 -249 -56 -303 54 -20 43 -21 57 -21 408 l0 363 -48 46 c-72 69 -97 128 -97 226 0 134 60 228 180 286 71 34 151 38 248 13 139 -36 240 26 267 164 24 125 84 204 178 236 65 23 122 20 199 -10 128 -48 199 -32 283 65 59 68 129 117 204 143 63 21 193 23 257 4z m1547 -2740 c1 -456 -1 -633 -9 -642 -9 -11 -67 -14 -290 -14 l-279 0 0 645 0 645 288 -2 287 -3 3 -629z" />
+                            </g>
+                        </svg>
+                        <h3>Beer Brewing</h2>
+                    </div>
+                    <div class="workout">
+                        <svg class="workout-image" xmlns="http://www.w3.org/2000/svg" version="1.0" width="200"
+                            height="200" viewBox="0 0 350.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                            <g transform="translate(-400.00000,700.000000) scale(0.100000,-0.100000)" fill="#24242e"
+                                stroke="none">
+                                <path
+                                    d="M4030 5854 c-109 -29 -211 -127 -252 -242 -10 -30 -13 -338 -13 -1588 l0 -1550 38 -76 c42 -87 92 -136 177 -177 52 -25 63 -26 220 -26 157 0 168 1 220 26 85 41 135 90 177 177 l38 76 0 1555 0 1556 -27 57 c-15 32 -39 73 -53 92 -38 50 -121 103 -190 121 -76 19 -260 19 -335 -1z" />
+                                <path
+                                    d="M7736 5854 c-132 -41 -228 -150 -256 -290 -14 -74 -13 -3007 1 -3076 25 -117 98 -211 205 -264 58 -28 62 -29 224 -29 l165 0 67 33 c80 39 148 111 181 192 l22 55 3 1529 c3 1697 6 1598 -63 1703 -45 67 -113 117 -194 143 -79 25 -278 27 -355 4z" />
+                                <path
+                                    d="M3146 5151 c-132 -54 -206 -149 -226 -292 -7 -47 -9 -364 -7 -878 2 -733 4 -811 20 -856 36 -104 119 -185 225 -220 42 -13 78 -16 175 -13 109 3 128 7 175 31 68 35 124 94 159 165 l28 57 0 885 0 885 -24 52 c-28 63 -112 146 -178 176 -70 31 -276 36 -347 8z" />
+                                <path
+                                    d="M8653 5156 c-89 -29 -169 -100 -213 -191 l-25 -50 0 -885 0 -885 22 -47 c29 -63 106 -144 168 -176 44 -23 64 -27 172 -30 180 -6 264 27 345 133 72 96 69 51 72 977 2 458 -1 855 -5 882 -19 106 -90 200 -191 253 -48 25 -64 28 -178 30 -85 2 -138 -2 -167 -11z" />
+                                <path
+                                    d="M4704 4581 c-2 -2 -4 -253 -4 -558 l0 -553 155 0 155 0 0 558 0 557 -151 0 c-83 0 -152 -2 -155 -4z" />
+                                <path
+                                    d="M7233 4583 l-133 -4 0 -554 0 -555 155 0 155 0 2 530 c1 292 2 542 2 558 1 31 14 30 -181 25z" />
+                                <path
+                                    d="M2489 4441 c-78 -16 -137 -72 -159 -150 -14 -51 -13 -489 1 -532 18 -52 56 -97 102 -121 39 -20 56 -21 226 -20 101 1 185 3 187 5 2 1 4 182 4 401 1 285 -2 402 -10 410 -13 13 -294 19 -351 7z" />
+                                <path
+                                    d="M9268 4440 c-16 -10 -17 -44 -18 -399 0 -214 2 -396 6 -405 5 -14 29 -16 193 -16 l187 0 46 29 c30 19 52 44 66 72 20 41 21 62 23 304 1 290 -1 304 -64 364 -22 20 -55 38 -84 46 -60 15 -332 19 -355 5z" />
+                                <path d="M5070 4043 l0 -283 985 0 985 0 0 280 0 280 -985 2 -985 3 0 -282z" />
+                            </g>
+                        </svg>
+                        <h3>Workout</h3>
+                    </div>
+                </div>
 
 
+
+            </div>
+        </div>
+    </section>
+    <section class="sub-section-skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="front-container">
+                <h3>Front-end</h3>
+                <div class="front-skills">
+                    <div class="html-css-js-skill"><img class="html-css-js-skill-image"
+                            src="./src/images/html-css-js.png" alt="html css javascript logo"></div>
+                    <div class="typescript-skill"><img class="typescript-skill-image" src="./src/images/typescript.png"
+                            alt="html css javascript logo"></div>
+                    <div class="react-skill"><img class="react-skill-image" src="./src/images/react.png"
+                            alt="react logo"></div>
+                </div>
+            </div>
+            <div class="back-container">
+                <h3>Back-end</h3>
+                <div class="back-skills">
+                    <div class="nodejs-skill"><img class="nodejs-skill-image" src="./src/images/nodejs.png"
+                            alt="node js logo"></div>
+                    <div class="docker-skill"><img class="docker-skill-image" src="./src/images/docker.png"
+                            alt="docker js logo"></div>
+                    <div class="aws-skill"><img class="aws-skill-image" src="./src/images/aws.png" alt="aws js logo">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="sub-section-alternative" id="projects">
         <h2>Projects</h2>
         <div class="project-container">
-            <div class="project-card">
-                <img src="" class="project-image" alt="project One image">
-                <h3>project One</h3>
-                <p class="subtext">This is my project one</p>
-                <hr>
-                <p class="subtext"><a class="project-link" href="https://www.githubcom/chelfonseca">View Here</a></p>
-
-            </div>
-            <div class="project-card">
-                <img src="" class="project-image" alt="project One image">
-                <h3>project two</h3>
-                <p class="subtext">This is my project two</p>
-                <hr>
-                <p class="subtext"><a class="project-link" href="https://www.githubcom/chelfonseca">View Here</a></p>
-            </div>
-            <div class="project-card">
-                <img src="" class="project-image" alt="project One image">
-                <h3>project three</h3>
-                <p class="subtext">This is my project three</p>
-                <hr>
-                <p class="subtext"><a class="project-link" href="https://www.githubcom/chelfonseca">View Here</a></p>
-            </div>
+            <a href="https://github.com/chelfonseca" target="_blank" class="projects-image"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="#24242e" width="200" height="200" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+                <h3 class="h3-projects">Visit my github</h3>
+            </a>
         </div>
     </section>
+    <footer id="contact-me" class="text-direction">
+        <a href="mailto: michelbeserradafonseca@gmail.com">
+            <h2>Contact me </h2>
+            <p>michelbeserradafonseca@gmail.com</p>
+        </a>
 
-    <section class="sub-section" id="contact-me">contact</section>
-    <footer>
-        <h3>Contact me </h3>
-        <p>michelbeserradafonseca@gmail.com</p>
     </footer>
     <script src="./src/app.js"></script>
 </body>
